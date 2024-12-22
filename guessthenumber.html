@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #gamebox{
+            margin: 200px 800px;            
+            border: 2px solid black;
+            padding:20px;
+            display:flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            width: 300px;
+        }
+        input[type="text"]:focus{
+            border: 2px solid rgb(127, 221, 255);
+            outline: none;
+        }
+        h2{
+            margin: 0;
+        }
+        input[type="text"]{
+            margin: 0;
+            padding: 5px;
+        }
+        button{
+            padding: 7px;
+            background-color: black;
+            color:white;
+            font-size: larger;
+        }
+        button:hover{
+            background-color: rgba(16, 15, 15, 0.429);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="gamebox">
+        <h2 id="hint">Enter a Number</h2>
+        <input type="text" class="text" id="number">
+        <button id="submit" value="Submit">Click me!!</button>
+    </div>
+    <script src="guessthenumber.js"></script>
+</body>
+</html>
